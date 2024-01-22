@@ -7,29 +7,56 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Hockey</title>
+    <style>
+        .carousel {
+          margin-left: 20%;
+          margin-top: 2%;
+          max-width: 800px;
+        }
+      </style>
 </head>
 
 <body>
-    <div class="nav-part">
-        <p class="menu menu-horizontal lg:menu-horizontal bg-base-200 rounded-box">Hockey</p>
-        <ul class="menu menu-horizontal lg:menu-horizontal bg-base-200 rounded-box">
+    <div style="margin-left: 15%;">
+        <p style="margin-right: 20%; font-size: large; font-family: sans-serif;" class="menu menu-horizontal lg:menu-horizontal bg-base-200 rounded-box">Hockey</p>
+        <ul style="margin-right: 10%;" class="menu menu-horizontal lg:menu-horizontal bg-base-200 rounded-box">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
             <li><a>Contact</a></li>
         </ul>
-        <button class="btn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        
+        <i class="fas fa-search">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
                 <path
                     d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
-            </svg>
-            <div>Search</div>
-        </button>
-        
+            </svg> -->
+        </i>
+      
+        <button class="btn">Get Ticket</button>
     </div>
    
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-50%" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.png" class="w-50%" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        
+        </div>
+      </div>
+
+      
 </body>
 
 </html>
